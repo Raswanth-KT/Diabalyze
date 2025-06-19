@@ -1,40 +1,59 @@
-🩺 Diabetes Prediction Using Machine Learning
+# 🩺 Diabalyze - Diabetes Prediction with Machine Learning
 
-This project aims to predict whether a person is diabetic or not using multiple machine learning models. The dataset has been thoroughly preprocessed and enhanced with custom feature engineering to improve model performance and interpretability.
+**Diabalyze** is a machine learning-based web application that predicts whether a person is diabetic or not based on medical inputs like glucose level, insulin, BMI, and more.
 
-🔍 Project Highlights
-	•	🔢 Models Used:
-	•	Logistic Regression
-	•	K-Nearest Neighbors (KNN)
-	•	Decision Tree
-	•	Gradient Boosting Classifier
-	•	🛠️ Techniques Applied:
-	•	Data cleaning and preprocessing
-	•	Outlier detection and removal
-	•	Feature engineering (BMI categories, glucose levels, etc.)
-	•	One-hot encoding of categorical features
-	•	Train-test split evaluation
-	•	Accuracy, confusion matrix, and classification reports for evaluation
+This project is built using a trained Gradient Boosting Classifier model and provides an easy-to-use interface via **Streamlit**.
 
-📁 Dataset
+---
 
-Used the PIMA Indians Diabetes Dataset, which includes features like:
-	•	Glucose
-	•	BMI
-	•	Insulin
-	•	Age
-	•	Skin Thickness
-	•	Diabetes Pedigree Function
+## 🚀 Features
+- Machine Learning models used: Logistic Regression, KNN, Decision Tree, Gradient Boosting
+- Full pipeline: data cleaning, outlier removal, feature engineering, one-hot encoding
+- Model evaluation with accuracy score, confusion matrix, and classification report
+- Web interface built using **Streamlit**
 
-📈 Goal
+---
 
-To create a robust binary classification system that predicts the likelihood of diabetes based on clinical parameters.
+## 🧪 Inputs
+- Pregnancies
+- Glucose Level
+- Blood Pressure
+- Skin Thickness
+- Insulin Level
+- BMI
+- Diabetes Pedigree Function
+- Age
 
-⸻
+---
 
-🚀 How to Run
-	1.	Clone the repository
-	2.	Install dependencies from requirements.txt
-	3.	Run the Jupyter Notebook or script to train and evaluate models
+## 🖥️ How to Run
 
-⸻
+### 1. Clone the repo and install dependencies:
+```bash
+pip install streamlit numpy scikit-learn
+```
+
+### 2. Make sure `Diabalyze.pkl` (your trained model) is in the same directory.
+
+### 3. Run the Streamlit app:
+```bash
+streamlit run diabalyze_app.py
+```
+
+---
+
+## 📦 File Structure
+```
+├── diabalyze_app.py       # Streamlit web app
+├── Diabalyze.pkl          # Trained ML model (must be generated separately)
+└── README.md              # Project documentation
+```
+
+---
+
+## ✅ Future Improvements
+- Add cross-validation and hyperparameter tuning
+- Visualize model insights using SHAP
+- Enable batch prediction via CSV upload
+
+---
